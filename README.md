@@ -8,7 +8,9 @@ Based on the ubuntu 14.04 image.
 
 Build an image from a Dockerfile in current directory (the last `.`). The image is called `jobe0900/limebuntu`, tagged with `1` as a version number.
 	
-###2. Create an alias for simplifying running the box simpler
+###2. Create an alias for simplifying running the box
+
+(I name my box `limebuntu`, but it can be called anything.)
 
 	$ echo "alias limebuntu='sudo docker run -it -v \`pwd\`/code:/home/me --rm jobe0900/limebuntu:1'" >> ~/.bashrc
 	$ . ~/.bashrc
@@ -66,9 +68,10 @@ Ctrl + Q to quit the `termbox` frontend
 	$ cd ../qml
 	$ ./qml
 
-This also works, but some flickering
+This also works, with some flickering
 	
 	$ cd ../html
 	$ ./html
 
-Browse to http://localhost:8080. Ctrl + C to quit server
+Browse to `http://localhost:8080`
+Ctrl + C to quit server
